@@ -12,9 +12,9 @@ var io = require("socket.io")(server);
 // middle ware
 app.use(express.json());
 
-// 몽고디비 연결해야 함 (3rd commit)
+// 몽고디비 연결해야 함 (3rd commit) //
 const DB =
-  "mongodb+srv://rivaan:test123@cluster0.rmhtu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv: //rivaan:test123@cluster0.rmhtu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 io.on("connection", (socket) => {
   console.log("connected!");
